@@ -19,8 +19,8 @@
                 android:orientation="vertical"
                 android:layout_height="wrap_content">
             <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 >
             <ImageView
                 android:id="@+id/ico_1"
@@ -57,25 +57,27 @@
                 android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                 android:background="@drawable/mario"
-                    android:layout_below="@id/txt_2" />
+                    android:layout_below="@id/txt_2"
+                    android:layout_marginRight="10dp"/>
 
                 <TextView
                     android:id="@+id/txt_3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/str_1"
+                    android:text="@string/str_3"
                     android:layout_toRightOf="@id/image1"
                     android:layout_centerInParent="true"
                     android:textColor="@android:color/black"
                     android:textStyle="bold"
                     android:textSize="20dp"
+                    android:layout_marginBottom="10dp"
 
                     />
                 <TextView
                     android:id="@+id/txt_4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/str_1"
+                    android:text="@string/str_4"
                     android:layout_toRightOf="@id/image1"
                     android:layout_below="@id/txt_3"
                     android:textColor="@android:color/black"
@@ -83,12 +85,19 @@
                     />
 
 
-
             </RelativeLayout>
 
             </LinearLayout>
         </ScrollView>
 
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_gravity="bottom end"
+        android:src="@drawable/icons8_oso_de_peluche_48"
+        />
 
 
 
